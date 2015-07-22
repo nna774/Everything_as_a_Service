@@ -99,8 +99,8 @@ func onTweet(api *anaconda.TwitterApi, tw anaconda.Tweet) {
 		return
 	}
 	c := candidates[rand.Intn(len(candidates))]
-	log.Printf("%s as a Service\n", c)
-	t, err := api.PostTweet(c+" as a Service", nil)
+	log.Printf("%sはアマゾン\n", c)
+	t, err := api.PostTweet(c+"はアマゾン", nil)
 	if err != nil {
 		log.Println(err)
 	}
